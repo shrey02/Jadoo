@@ -5,10 +5,10 @@ import Home from './components/navbar/Navbar';
 import Traveller from './images/Traveller.png';
 import Decore from './images/Decore.png';
 import Banner from './components/banner/Banner';
-// import Category from './components/category/Category';
+import Category from './components/category/Category';
 import Footer from './components/Footer/Footer';
-// import air from './images/air.png';
-// import Cards from './components/category/Cards';
+import air from './images/air.png';
+import Cards from './components/category/Cards';
 
 function App() {
 
@@ -27,12 +27,12 @@ function App() {
     <img src={Traveller} alt="" className='traveller__pic'></img>
      
      {/* <Category/> */}
-     {/* <div className='destination_cards'>  */}
-     {/* <Cards img={air} head="Flights" text="Book now"/>
+     <div className='destination_cards'> 
      <Cards img={air} head="Flights" text="Book now"/>
-     <Cards img={air} head="Flights" text="Book now"/> */}
-    {/* </div>  */}
-    {/* <Category/> */}
+     <Cards img={air} head="Flights" text="Book now"/>
+     <Cards img={air} head="Flights" text="Book now"/>
+    </div> 
+    <Category/>
     <div className='destination_cards'>
       {
     description.map((card)=>{
