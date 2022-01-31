@@ -1,0 +1,221 @@
+
+.containers{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.sub__heading{
+    font-size: 60%;
+    color: #5E6282;
+}
+.main__heading{
+    color: #14183E;
+}
+
+@media screen and (min-width:700px) {
+    .container{
+        margin-top: 10%;
+    }
+}
+
+.container{
+    position: relative;
+
+  }
+  
+  .container .card{
+    position: relative;
+    width: 15rem;
+    height: 25rem;
+    background: whitesmoke;
+    border-radius: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    overflow: hidden;
+  }
+  
+  .container .card:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #97d7e7;
+    clip-path: circle(150px at 80% 20%);
+  
+    transition: 0.5s ease-in-out;
+  }
+  
+  .container .card:hover:before{
+    clip-path: circle(300px at 80% -20%);
+  }
+  
+  .container .card:after{
+    content: 'Nike';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 1.2rem;
+    font-weight: 800;
+    font-style: italic;
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  
+  .container .card .imgBx{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+  }
+  
+  .container .card:hover .imgBx{
+    top: 0%;
+    transform: translateY(0%);
+      
+  }
+  
+  .container .card .imgBx img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+    width: 270px;
+  }
+  
+  .container .card .contentBx{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+  }
+  
+  .container .card:hover .contentBx{
+    height: 21rem;
+  }
+  
+  .container .card .contentBx h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: black;
+    
+    margin: 0;
+  }
+  
+  .container .card .contentBx .size, .container .card .contentBx .color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem 2rem;
+    transition: 0.5s;opacity: 0;
+    visibility: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .container .card:hover .contentBx .size{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+  }
+  
+  .container .card:hover .contentBx .color{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+  }
+  
+  .container .card .contentBx .size h3, .container .card .contentBx .color h3{
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    margin-right: 1;
+  }
+  
+  .container .card .contentBx .size span{
+    width: 2.6rem;
+    height: 2.6rem;
+    text-align: center;
+    line-height: 2.6rem;
+    font-size: 1.4rem;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 .5rem;
+    transition: 0.5s;
+    color: #111;
+    border-radius: .4rem;
+    cursor: pointer;
+  }
+  
+  .container .card .contentBx .size span:hover{
+    background: #9bdc28;
+  }
+  
+  .container .card .contentBx .color span{
+    width: 2rem;
+    height: 2rem;
+    background: #ff0;
+    border-radius: 50%;
+    margin: 0 .5rem;
+    cursor: pointer;
+  }
+  
+  .container .card .contentBx .color span:nth-child(2){
+    background: #9bdc28;
+  }
+  
+  .container .card .contentBx .color span:nth-child(3){
+    background: #03a9f4;
+  }
+  
+  .container .card .contentBx .color span:nth-child(4){
+    background: #e91e63;
+  }
+  
+  .container .card .contentBx a{
+    display: inline-block;
+    padding: 1 2;
+    background: black;
+    border-radius: .4rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    transform: translateY(5rem);
+    transition: 0.5s;
+    margin-top: 13rem;
+  }
+  
+  .container .card:hover .contentBx a{
+    opacity: 1;
+    transform: translateY(0rem);
+    transition-delay: 0.75s;
+    
+  }
+  @media(max-width:998px){
+      html{
+          font-size: 55%;
+      }
+  
+  }
+  @media(max-width:768px){
+      html{
+          font-size: 45%;
+      }
+      
+  }

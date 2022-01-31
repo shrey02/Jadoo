@@ -1,0 +1,237 @@
+/* light color */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans&family=Rubik&display=swap');
+.contactCard{
+background: #ecebf1b9;
+position: relative;
+width: 80vw;
+height: 10em;
+max-width: 1800px;
+margin-left: 10%;
+opacity: 0.8;
+border-radius:129px 20px  20px  20px ;
+margin-bottom: 20%;
+/* padding:0 10% 0 0; */
+/* transform: matrix(-1, 0, 0, 1, 0, 0); */
+}
+.contactText{
+position: absolute;
+font-style: normal;
+font-weight: 600;
+margin-left: 2%;
+text-align: center;
+margin-top:5%; 
+    width: 98%;
+    height: 50%;
+    font-size: 78%;
+color:   #5E6282;
+}
+
+.contactButton{
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    top: 60%;
+    left:73%;
+}
+.contactButton__text{
+font-family: Open Sans;
+font-style: normal;
+margin-top: 8%;
+font-weight: 600;
+font-size: 50%;
+text-align: center;
+color: #FFFFFF;
+}
+
+.contact__form{
+    position: absolute;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    width: 50%;
+    height: 15%;
+    top:60%;
+    left:20%;
+    font-size:20px;
+    padding: 2px 0px 2px 10px;
+}
+
+.form__img{
+    position: absolute;
+    top:-5%;
+    left:97%;
+    width:60px;
+    height:60px;
+    background-image:url("/public/send.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width : 920px) { 
+    .contactText{
+    position: absolute;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 13%;
+    text-align: center;
+    margin-top:10%; 
+        width: 80%;
+        height: 50%;
+        font-size: 20px;
+    color:  #5E6282;
+    }
+    .contactButton{
+        position: absolute;
+        width: 15%;
+        height: 15%;
+        background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+        border-radius: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactButton__text{
+    font-family: Open Sans;
+    font-style: normal;
+    margin-top: 13%;
+    font-weight: 600;
+    font-size: 50%;
+    text-align: center;
+    color: #FFFFFF;
+    }
+    .form__img{
+        position: absolute;
+        top:-5%;
+        left:90%;
+        width:70px;
+        height:70px;
+        background-image:url("/public/send.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@media screen and (max-width : 600px) and (max-width : 400px) { 
+    .contactText{
+    position: absolute;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 20%;
+    margin-top:20%;
+    text-align: center;  
+        width: 60%;
+        height: 50%;
+        font-size: 15px;
+    color:  #5E6282;;
+    }
+    .contactButton{
+        position: absolute;
+        width: 100px;
+        height: 15%;
+        background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+        border-radius: 1rem;
+        justify-content: center;
+        align-items: center;
+        top: 75%;
+        left:30%;
+    }
+    .contactButton__text{
+    font-family: Open Sans;
+    font-style: normal;
+    margin-top: 15%;
+    font-weight: 600;
+    font-size: 50%;
+    text-align: center;
+    color: #FFFFFF;
+    }
+    .form__img{
+        position: absolute;
+        top:-5%;
+        left:90%;
+        width:70px;
+        height:70px;
+        background-image:url("/public/send.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@media screen and (max-width : 720px) and (max-width : 600px) { 
+    .contactText{
+        position: absolute;
+        font-style: normal;
+        font-weight: 600;
+        margin-left: 13%;
+        text-align: center;
+        margin-right: 10%;
+        margin-top:10%; 
+            width: 80%;
+            height: 50%;
+            font-size: 20px;
+        color:  #5E6282;
+    }
+    .contactButton{
+        position: absolute;
+        width: 100px;
+        height: 15%;
+        background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+        border-radius: 1rem;
+        justify-content: center;
+        align-items: center;
+        top: 75%;
+        left:40%;
+    }
+    .contactButton__text{
+    font-family: Open Sans;
+    font-style: normal;
+    margin-top: 15%;
+    font-weight: 600;
+    font-size: 50%;
+    text-align: center;
+    color: #FFFFFF;
+    }
+    .contact__form{
+        position: absolute;
+        background: #FFFFFF;
+        border-radius: 10px;
+        border: none;
+        width: 68%;
+        height: 15%;
+        top:55%;
+        left: 15%;
+        font-size:20px;
+    }
+    .form__img{
+        position: absolute;
+        top:-5%;
+        left:90%;
+        width:70px;
+        height:70px;
+        background-image:url("/public/send.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+/* input:placeholder-shown{
+    position: absolute;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    width: 68%;
+    height: 15%;
+    top:55%;
+    left: 15%;
+    font-size:25px;
+    background-image: url("/public/icons8-mail-48.png");
+    background-repeat: no-repeat;
+}
+input:not(:placeholder-shown){
+    background-image: none;
+} */
+
+
+
+
+    
+

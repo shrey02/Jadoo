@@ -1,0 +1,125 @@
+.Container {
+    margin: 0 auto;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+
+    bottom: 0;
+    width: 100%;
+    height: 25rem;
+    background-color:aliceblue;
+}
+    .body {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+        color: black;
+    }
+        .Container.body.logo.h1 {
+            
+                color: black;
+        }
+
+        .image {
+                height: 4rem;
+                margin-left: -48%;
+            }
+        
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-left: 25rem;
+            margin-top: -7rem;
+        }
+            .links.title {
+                color: white;
+                font-weight: 500;
+                margin-left: 10rem;
+            }
+
+            .links.title.a {
+                padding: 5px 0;
+                color: white;
+                font-size: 1.2rem;
+                font-weight: 200;
+                margin-left: 10rem;
+
+                
+            }
+            .links.title.a:hover {
+                transition: border-bottom .1s ease-out;
+                text-decoration: underline;
+                margin-left: 10rem;
+            }
+
+            .policies {
+                margin-top: 2rem;
+                /* margin-left: 25rem; */
+                font-size: medium;
+                font-weight: 300;
+                color: blue;
+            }
+            .policies.a {
+                    color: blue;
+
+                    
+                }
+                .policies.a:hover {
+                    color: white;
+                }
+            
+        
+
+        .notices.title {
+            
+                color: white;
+                font-weight: 500;
+                margin-left: 30rem;
+        }
+
+            .copyRight {
+                margin-top: 10px;
+                font-size: medium;
+                font-weight: 300;
+                color: white;
+
+                
+            }
+            .copyright.a {
+                color: blackr;
+
+                
+            }
+            .copyright.a:hover {
+                color: white;
+            }
+
+            .iconsNotice {
+                color: white;
+                font-weight: 200;
+
+                
+            }
+            .iconsNotice.a {
+                color: white;
+            }
+        
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .Container {
+        height: 5rem;
+    }
+}
+
+@media only screen and (min-device-width : 480px) and (max-device-width : 1080) {
+    .Container {
+        height: 10rem;
+    }
+}

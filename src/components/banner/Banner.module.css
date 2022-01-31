@@ -1,0 +1,66 @@
+.banner{
+    width: 70%;
+    height: 60%;
+}
+
+.login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: .1rem .4rem;
+    padding-left: 1.2rem;
+    position: absolute;
+    width: 9%;
+    height: 10%;
+    min-width: 100px;
+    min-height: 50px;
+    background: #F1A501;
+    border-radius: 1rem;    
+}
+.button{
+    position: static;
+width: 100%;
+height: 40%;
+left: 10%;
+top: 6%;
+
+font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 50%;
+line-height:150%;
+/* identical to box height, or 175% */
+
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 8px;
+}
+
+.before__heading{
+    width:70%;
+    height: 10%;
+    font-size: 55%;
+    color:#DF6951;
+
+}
+
+.main__heading{
+     height: 40%;
+     width: 60%;
+     margin-bottom: 5%;
+     margin-top: 1%;
+}
+.after__heading{
+    width: 60%;
+    height: 20%;
+    font-size: 60%;
+    color:  #5E6282;
+    line-height: 160%;
+    margin-bottom: 2%;
+}

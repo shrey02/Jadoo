@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+h1{
+  position: relative;
+}
+.destination_cards{
+  display: grid;
+  margin-left: 13%;
+  grid-template-columns: repeat(3,1fr);
+  margin-top: 10%;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.traveller__pic{
+  margin-left:60%;
+  margin-top: 5%; 
+  width: 27%;
+  height: 27%;
+  z-index: 2;
+  min-width: 300px;
+  min-height: 300px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  .design__pic{
+    z-index: -1;  
+    position: absolute;
+    margin-left:60%;
+    width: 40%;
+    margin-top:-10%;
+    height: 40%;
+    
+    }
 
-.App-link {
-  color: #61dafb;
+.intro__heading{
+  position: absolute;
+  margin-top:5%;
+  margin-left: 10%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.footer{
+  top:100%;
+}
+.contact{
+  margin-bottom: 100px;
+}
+@media screen and (max-width : 600px)  { 
+  .destination_cards{
+    display: grid;
+    margin-left: 20%;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 30%;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
 }
+@media screen and (max-width :800px)  { 
+  .destination_cards{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-left: 25%;
+    margin-top: 50%;
+  }
+  .traveller__pic{
+    margin-top: 5%; 
+    width: 20%;
+    height: 25%;
+    z-index: 2;
+    margin-left:40%;
+    }
+    .design__pic{
+      z-index: -1;  
+      position: absolute;
+      margin-left:40%;
+      width: 60%;
+      margin-top:-20%;
+      height: 25%;
+      
+      }
+}
+
+.pic__container{
+  position: relative;
+  margin-left:65rem;
+  margin-top: 5rem; 
+}
+
+
